@@ -18,6 +18,7 @@ pub enum Command {
         tag: TagId,
         swap: bool,
     },
+    ReturnToLastTag,
     FloatingToTile,
     TileToFloating,
     ToggleFloating,
@@ -52,5 +53,6 @@ pub enum Command {
     DecreaseMainWidth(i8),
     SetMarginMultiplier(f32),
     SendWorkspaceToTag(usize, usize),
+    CloseAllOtherWindows,
     Other(String),
 }
